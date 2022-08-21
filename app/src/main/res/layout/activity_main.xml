@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Assignment1.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:text="Welcome User"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your details."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Name" />
+    <EditText
+        android:id="@+id/nameEt"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/radius"
+        android:textSize="15dp"
+        android:paddingLeft="21dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Birth Date"/>
+
+        <TextView
+
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/radius"
+            android:layout_marginTop="20px"
+            android:textSize="15dp"
+            android:paddingLeft="21dp"
+            android:gravity="center_vertical"
+            android:hint="Enter Your Birthday"
+            android:inputType="date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Email Id"/>
+        <EditText
+            android:id="@+id/emailEt"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/radius"
+            android:textSize="15dp"
+            android:paddingLeft="21dp" />
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Submit"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"/>
+    </LinearLayout>
+</RelativeLayout>
